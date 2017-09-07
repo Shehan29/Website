@@ -11,6 +11,39 @@
 		vertical-align: baseline;
 	}
 
+	/* Mobile + Desktop Custom Styles */
+	.workSummary {
+		display: block;
+	}
+
+	.workDiv {
+		width: 100%;
+		padding: 64px;
+	}
+
+	.workImg {
+		width: 10em;
+		float: right;
+		margin-left: 10px
+	}
+
+	@media only screen and (max-device-width: 480px) {
+		.workSummary {
+			display: grid;
+		}
+		.workDiv {
+			width: auto;
+			padding: 64px;
+			text-align: center;
+		}
+		.workImg {
+			margin: auto;
+			width: 50%;
+			padding: 10px;
+		}
+	}
+	/*--------------------------------*/
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
