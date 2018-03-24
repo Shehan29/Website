@@ -1,219 +1,556 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Shehan Suresh</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Shehan Suresh</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
 </head>
-<body>
 
-<!-- Sidebar -->
-<section id="sidebar">
-	<div class="inner">
-		<nav>
-			<ul>
-				<li><a href="#intro">Welcome</a></li>
-				<li><a href="#one">Who Am I</a></li>
-				<li><a href="#work">Work Experience</a></li>
-				<li><a href="#two">Projects</a></li>
-				<li><a href="#three">Get in touch</a></li>
-			</ul>
-		</nav>
-	</div>
-</section>
+<body class="profile-page">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="500">
+    <div class="container">
 
-<!-- Wrapper -->
-<div id="wrapper">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="" target="_top" rel="tooltip" title="Passionate Problem Solver" data-placement="bottom" target="_blank">
+                Shehan Suresh
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutMe" >
+                        <i class="fa fa-user"></i>
+                        <p>About Me</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work" >
+                        <i class="fa fa-briefcase"></i>
+                        <p class="hidden-lg-up">Work</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects" >
+                        <i class="fa fa-code"></i>
+                        <p class="hidden-lg-up">Projects</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" >
+                        <i class="fa fa-address-card"></i>
+                        <p class="hidden-lg-up">Contact</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+<div class="wrapper">
+    <div class="page-header">
 
-	<!-- Intro -->
-	<section id="intro" class="wrapper style1 fullscreen fade-up">
-		<div class="inner">
-			<h1>Shehan Suresh</h1>
-			<p>One Coder. Infinite Possibilities.</p>
-			<ul class="actions">
-				<li><a href="Resume.pdf"  target="_blank" class="button scrolly">RESUME</a></li>
-			</ul>
-		</div>
-	</section>
 
-	<!-- One -->
-	<section id="one" class="wrapper style2 spotlights">
-		<section>
-			<a class="image"><img src="images/me.jpg" alt="" data-position="25% 25%" /></a>
-			<div class="content">
-				<div class="inner">
-					<h2>About me</h2>
-					<p>Hi, my name is Shehan Suresh. I am currently a 2A Software Engineering Student at the University of Waterloo. I am an avid programmer who enjoys coding and solving problems. Outside of developing software, I love to make robots, solve puzzles and play soccer.</p>
-					<ul class="icons">
-						<li><span class="fa-code"></span></li>
-						<li><span class="fa-code-fork"></span></li>
-						<li><span class="fa-terminal"></span></li>
-						<li><span class="fa-android"></span></li>
-						<li><span class="fa-puzzle-piece"></span></li>
-						<li><span class="fa-futbol-o"></span></li>
-						<li><span class="fa-bolt"></span></li>
-						<li><span class="fa-graduation-cap"></span></li>
-						<li><span class="fa-battery-full"></span></li>
-						<li><span class="fa-globe"></span></li>
-						<li><span class="fa-thumbs-up"></span></li>
-						<li><span class="fa-diamond"></span></li>
-						<li><span class="fa-paper-plane"></span></li>
-						<li><span class="fa-github-alt"></span></li>
-						<li><span class="fa-heart"></span></li>
-						<li><span class="fa-apple"></span></li>
-						<li><span class="fa-life-saver"></span></li>
-					</ul>
-					<ul class="actions">
-						<li><a href="https://github.com/Shehan29" target="_blank" class="button scrolly">GITHUB</a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-	</section>
+        <div class="page-header-image" data-parallax="true" id="particle-canvas"></div>
 
-	<!-- Work Experience -->
-	<section id="work" class="wrapper style3 spotlights">
-		<section>
-			<div class="workDiv">
-				<div class="inner">
-					<h2>National Instruments - <i>Application Software Developer</i></h2>
-					<p class="workSummary">	<img src="images/ni.png" class="workImg"/>
-						At National Instruments I worked in an Agile team implementing new features for Multisim Live.
-						<br/> Here are some interesting things I had the opportunity to complete:
-					<ul>
-						<li>Independently established a WebRTC signaling server that manages WebSocket connections and communication between clients</li>
-						<li>Codeveloped a WebRTC library that allows users to easily view devices and create datachannels that connect a site to a device</li>
-						<li>Created a Node.js server that implements the OpenScope API protocol using the REST API</li>
-						<li>Developed feature that allows users to share embeddable circuits in other webpages using iframes</li>
-						<li>Corrected Django migration scripts to correct broken databases in the team</li>
-					</ul>
-					Languages: <i>Javscript, Python, HTML, CSS</i><br/>
-					Frameworks: <i>jQuery, Polymer, Node.js, Django, Selenium, Jasmine</i><br/>
-					Tools: <i>Webstorm, PyCharm, Karma, Git, Perforce</i>
-					</p>
-					<ul class="actions">
-						<li><a href="https://www.multisim.com/" target="_blank" class="button">MultisimLive</a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section>
-			<div class="workDiv inner">
-				<h2>Brainweber - <i>Software Consultant</i></h2>
-				<p class="workSummary">	<img src="images/brainweber.png" class="workImg"/>
-					At Brainweber I worked on the AuctionMaster ReactJS Project.
-					<br/> Here are some interesting things I had the opportunity to complete:
-				<ul>
-					<li>Independently developed React modules from scratch for the web application</li>
-					<li>Asynchronously updated web pages with effective use of the REST API</li>
-					<li>Stored data using Redux, so that it can be retrieved across the application</li>
-				</ul>
-				Languages: <i>Javscript</i><br/>
-				Frameworks: <i>React, Redux</i><br/>
-				Tools: <i>Webstorm, Git</i>
-				</p>
-			</div>
-		</section>
-	</section>
+        <div class="content-center">
+            <div class="photo-container">
+                <img src="images/me_square.jpg" alt="">
+            </div>
+            <h3 class="title">Shehan Suresh</h3>
+            <p class="category">One Coder. Infinite Possibilities.</p>
+            <div class="content">
+                <div class="social-description">
+                    <h2>6</h2>
+                    <p>Years of Coding</p>
+                </div>
+                <div class="social-description">
+                    <h2>∞</h2>
+                    <p>Possibilities</p>
+                </div>
+                <div class="social-description">
+                    <h2>3</h2>
+                    <p>Hackathons</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="aboutMe"></section>
+    <div class="section">
+        <div class="container">
+            <div class="button-container">
+                <a href="Resume.pdf" target="_blank" class="btn btn-primary btn-round btn-lg" rel="tooltip" title="Download my Resume">Resume</a>
+                <a href="https://github.com/Shehan29" target="_blank" class="btn btn-github btn-round btn-lg btn-icon" rel="tooltip" title="View my GitHub">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shehansuresh/" target="_blank" class="btn btn-linkedin btn-round btn-lg btn-icon" rel="tooltip" title="Connect with me on LinkedIn">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+            <h3 class="title">About me</h3>
+            <h5 class="description text-center">I am a 2B Software Engineering Student at the University of Waterloo seeking a 4 month internship from September - December 2018.
+                I am an avid programmer who enjoys coding and solving problems.
+                Outside of developing software, I love to make 🤖, solve <img src="http://www.free-emoticons.com/files/music-emoticons/10784.png" style="border:0px;vertical-align:middle;height:1em">  and play ⚽.</h5>
 
-	<!-- Two -->
-	<section id="two" class="wrapper style1 fade-up">
-		<div class="inner">
-			<h2>Projects</h2>
-			<p>Check out some of my projects!</p>
-			<div class="features">
-				<section>
-					<span class="icon major fa-graduation-cap"></span>
-					<div style="display: inline-flex">
-						<h3>Grades</h3>
-						<ul class="icons" style="margin-left: 10px; margin-top: -2px; margin-bottom: 0">
-							<li><a href="https://github.com/Shehan29/Grades" target="_blank" class="fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</div>
-					<p style="margin-bottom: 5px"><i>React Native</i></p>
-					<p>Mark managing mobile application for students that runs on Android and iOS. Stores marks for various assessments (quizzes, midterm, etc.) for several courses and outlines averages for all possible items.</p>
-				</section>
-				<section>
-					<span class="icon major fa-pencil"></span>
-					<div style="display: inline-flex">
-						<h3>Quizzlet</h3>
-						<ul class="icons" style="margin-left: 10px; margin-top: -2px; margin-bottom: 0">
-							<li><a href="https://github.com/Shehan29/Quizzlet" target="_blank" class="fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</div>
-					<p style="margin-bottom: 5px"><i>Java, MySQL, Swing, AWT Libraries, Access</i></p>
-					<p>Interactive quizzing application that facilitates teachers and students to create customizable quizzes with multiple choice, true/false or short answer questions. Quizzes are stored in a database so they can be accessed at any time.</p>
-				</section>
-				<section>
-					<span class="icon major fa-trophy"></span>
-					<div style="display: inline-flex">
-						<h3>Jump</h3>
-						<ul class="icons" style="margin-left: 10px; margin-top: -2px; margin-bottom: 0">
-							<li><a href="https://github.com/Shehan29/Jump" target="_blank" class="fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.youtube.com/watch?v=cdOMkI7yCCY" target="_blank" class="fa-youtube-play"><span class="label">YouTube</span></a></li>
-						</ul>
-					</div>
-					<p style="margin-bottom: 5px"><i>C/C++, Energia, Tiva C</i></p>
-					<p>A multi-level game where the user dodges randomly generated obstacles in order to reach the end. Utilizes Orbit Booster Pack to display graphics on the LED Screen and uses buttons, accelerometer and potentiometer for in-game control.</p>
-				</section>
-				<section>
-					<span class="icon major fa-code"></span>
-					<div style="display: inline-flex">
-						<h3>Coding Challenges</h3>
-						<ul class="icons" style="margin-left: 10px; margin-top: -2px; margin-bottom: 0">
-							<li><a href="https://github.com/Shehan29/Coding-Challenges" target="_blank" class="fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</div>
-					<p style="margin-bottom: 5px"><i>C++</i></p>
-					<p>Some of the many interesting solutions I have devised for coding problems I have come across as an intrigued software developer.</p>
-				</section>
-			</div>
-		</div>
-	</section>
+            <div style="text-align: center">
+                <h4>Status:
+                    <div class="text-warning" style="display: inline-block;">Seeking Internship</div>
+                </h4>
+                <p class="description" style="margin-top: 0; margin-bottom: 0">September - December 2018</p>
+            </div>
 
-	<!-- Three -->
-	<section id="three" class="wrapper style2 fade-up">
-		<div class="inner">
-			<h2>Get in touch</h2>
-			<div class="split style2">
-				<section>
-					<ul class="contact">
-						<li>
-							<h3>Email</h3>
-							<a href="mailto:shehan.suresh@uwaterloo.ca?Subject=Hi%20Shehan">shehan.suresh@uwaterloo.ca</a>
-						</li>
-						<li>
-							<h3>Phone</h3>
-							<span>(416) 471-8024</span>
-						</li>
-						<li>
-							<h3>Social</h3>
-							<ul class="icons">
-								<li><a href="https://github.com/Shehan29" target="_blank" class="fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/shehansuresh/" target="_blank" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://www.facebook.com/shehan.suresh.5" target="_blank" class="fa-facebook"><span class="label">Facebook</span></a></li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-			</div>
-		</div>
-	</section>
 
+            <section id="work" style="padding-top: 40px"></section>
+            <div class="container">
+                <div class="row">
+                <div class="col-md-12">
+                    <h4 class="title text-center">Work Experience</h4>
+                    <div class="nav-align-center">
+                        <ul class="nav nav-pills nav-pills-neutral nav-pills-just-icons" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#profile" role="tablist">
+                                    <img src="images/capitalOne.png" style="margin-top: 30%"/>
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#home" role="tablist">
+                                    <img src="images/ni.png" style="margin-top: 20%;height: 70%;"/>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#messages" role="tablist">
+                                    <img src="images/brainweber.png" style="margin-top: 15%;height: 70%;"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Tab panes -->
+                    <div class="tab-content gallery">
+                        <div class="tab-pane active" id="profile" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-5 ml-auto mr-auto">
+                                    <div class="card card-background card-background-product card-raised" style="background: red">
+                                        <div class="card-body">
+                                            <h2 class="card-title">Capital One</h2>
+                                            <p class="description">
+                                                Coded solutions to prevent + reduce fraud.
+                                            </p>
+                                            <hr style="border-color: white">
+                                            <h4 class="card-title">Languages / Frameworks / Tools</h4>
+                                            <p class="description">
+                                                Java, Python, Kafka, JavaScript, D3
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="info info-horizontal">
+                                        <div class="icon icon-danger">
+                                            <i class="now-ui-icons ui-2_chat-round"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="info-title">Cool Things I Did</h5>
+                                            <p>
+                                                <ul class="workExperience">
+                                                    <li>Configured multi-threading in the application to increase processing speed of messages by a factor of 10</li>
+                                                    <li>Implemented features involving complex aggregations of streams</li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="home" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-5 ml-auto mr-auto">
+                                    <div class="card card-background card-background-product card-raised" style="background: darkblue">
+                                        <div class="card-body">
+                                            <h2 class="card-title">National Instruments</h2>
+                                            <p class="description">
+                                                Worked in an Agile team implementing new features for Multisim Live.
+                                            </p>
+                                            <hr style="border-color: white">
+                                            <h4 class="card-title">Languages / Frameworks / Tools</h4>
+                                            <p class="description">
+                                                Javscript, Python, HTML, CSS
+                                                <br/>
+                                                jQuery, Polymer, Node.js, Django, Selenium, Jasmine
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="info info-horizontal">
+                                        <div class="icon icon-info">
+                                            <i class="now-ui-icons ui-2_chat-round"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="info-title">Cool Things I Did</h5>
+                                            <p>
+                                            <ul class="workExperience">
+                                                <li>Independently established a WebRTC signaling server that manages WebSocket connections and communication between clients</li>
+                                                <li>Codeveloped a WebRTC library that allows users to easily view devices and create datachannels that connect a site to a device</li>
+                                                <li>Created a Node.js server that implements the OpenScope API protocol using the REST API</li>
+                                                <li>Developed feature that allows users to share embeddable circuits in other webpages using iframes</li>
+                                                <li>Corrected Django migration scripts to correct broken databases in the team</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="messages" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-5 ml-auto mr-auto">
+                                    <div class="card card-background card-background-product card-raised" style="background: lime">
+                                        <div class="card-body">
+                                            <h2 class="card-title">Brainweber</h2>
+                                            <p class="card-description">
+                                                Independently initiated the AuctionMaster ReactJS Project.
+                                            </p>
+                                            <hr style="border-color: white">
+                                            <h4 class="card-title">Languages / Frameworks / Tools</h4>
+                                            <p class="description">
+                                                Javscript, React, Redux
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="info info-horizontal">
+                                        <div class="icon icon-success">
+                                            <i class="now-ui-icons ui-2_chat-round"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="info-title">Cool Things I Did</h5>
+                                            <p>
+                                            <ul class="workExperience">
+                                                <li>Independently developed React modules from scratch for the web application</li>
+                                                <li>Asynchronously updated web pages with effective use of the REST API</li>
+                                                <li>Stored data using Redux, so that it can be retrieved across the application</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <section id="projects"></section>
+            <div class="cards">
+                <div class="container">
+                    <div class="title">
+                        <h3 class="title">Projects</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <!--Aloud-->
+                            <div class="card card-blog" data-background-color="green">
+                                <div class="card-image">
+                                    <img class="img rounded" src="images/aloud.png">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="category">
+                                        <i class="fa fa-code"></i> Side Project
+                                    </h6>
+                                    <h4 class="card-title">
+                                        <a href="https://github.com/Shehan29/Aloud" target="_blank" rel="tooltip" title="Check it out on GitHub">Aloud</a>
+                                    </h4>
+                                    <p class="card-description">
+                                        Mobile app to help children learn to read.
+                                    </p>
+                                    <div class="card-footer">
+                                        <div class="author">
+                                            <span>Ionic, TypeScript, Google Cloud Vision</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Munch-->
+                            <div class="card card-blog" data-background-color="gray">
+                                <div class="card-image">
+                                    <img class="img rounded" src="images/munch.png">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="category">
+                                        <i class="fa fa-trophy"></i> Hackathon Project
+                                    </h6>
+                                    <h4 class="card-title">
+                                        <a href="https://devpost.com/software/munch-emsv0u" target="_blank" rel="tooltip" title="Learn more about this on Devpost">Munch - WolframOne Award</a>
+                                    </h4>
+                                    <p class="card-description">
+                                        Snap! Learn! Enjoy! <br/>
+                                        Mobile app that helps you keep track of your nutritional intake.
+                                    </p>
+                                    <div class="card-footer">
+                                        <div class="author">
+                                            <span>Ionic, JavaScript, Node.js, AWS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <!--FINDR-->
+                            <div class="card card-blog" data-background-color="orange">
+                                <div class="card-image">
+                                    <img class="img rounded" src="images/robot.jpg">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="category">
+                                        <i class="fa fa-trophy"></i> Hackathon Project
+                                    </h6>
+                                    <h4 class="card-title">
+                                        <a href="https://devpost.com/software/findr-tecs5h" target="_blank" rel="tooltip" title="Learn more about this on Devpost">FINDR - 3rd Prize</a>
+                                    </h4>
+                                    <p class="card-description">
+                                        Autonomous self-driving robot that is designed to help people in distress in times of emergencies.
+                                    </p>
+                                    <div class="card-footer">
+                                        <div class="author">
+                                            <span>Raspberry Pi, Myo, Python, OpenCV, JavaScript, Firebase</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--MagicHand-->
+                            <div class="card" >
+                                <div class="card-body">
+                                    <h6 class="category">
+                                        <i class="fa fa-code"></i> Side Project
+                                    </h6>
+                                    <h4 class="card-title">
+                                        <a href="https://github.com/Shehan29/MagicHand" target="_blank" rel="tooltip" title="Check it out on GitHub">MagicHand</a>
+                                    </h4>
+                                    <p class="card-description">
+                                        Control your computer by moving your hand! Magic?!
+                                        <i class="fa fa-magic"></i>
+                                    </p>
+                                    <div class="card-footer">
+                                        <div class="author">
+                                            <span>Python, OpenCV</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--MagicHand-->
+                            <div class="card" data-background-color="yellow">
+                                <div class="card-body">
+                                    <h6 class="category">
+                                        <i class="fa fa-question"></i> Mystery
+                                    </h6>
+                                    <h4 class="card-title">
+                                        More Projects to Come
+                                    </h4>
+                                    <p class="card-description">
+                                        I'm always working on something cool!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0">
+                            <!--Grades-->
+                            <div class="card card-blog" data-background-color="blue">
+                                <div class="card-image">
+                                    <img class="img rounded" src="images/grades.png">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="category">
+                                        <i class="fa fa-code"></i> Side Project
+                                    </h6>
+                                    <h4 class="card-title">
+                                        <a href="https://github.com/Shehan29/Grades" target="_blank" rel="tooltip" title="Check it out on GitHub">Grades</a>
+                                    </h4>
+                                    <p class="card-description">
+                                        React native application that allows students to keep track of their marks + averages.
+                                    </p>
+                                    <div class="card-footer">
+                                        <div class="author">
+                                            <span>React Native, JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Jump-->
+                            <div class="card" data-background-color="black">
+                                <div class="card-body">
+                                    <h6 class="category">
+                                        <i class="fa fa-graduation-cap"></i> School Project
+                                    </h6>
+                                    <h4 class="card-title">
+                                        <a href="https://github.com/Shehan29/JUMP" target="_blank" rel="tooltip" title="Check it out on GitHub">Jump</a>
+                                    </h4>
+                                    <p class="card-description">
+                                        A multi-level game for the Tiva C Board where the user dodges randomly generated obstacles in order to reach the end.
+                                    </p>
+                                    <div class="card-footer">
+                                        <div class="author">
+                                            <span>C/C++, Energia, Tiva C</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="https://www.youtube.com/watch?v=cdOMkI7yCCY" target="_blank" class="btn btn-youtube btn-round btn-lg btn-icon" rel="tooltip" title="Watch the video">
+                                            <i class="fa fa-youtube-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Quizzlet-->
+                            <div class="card" data-background-color="red">
+                                <div class="card-body">
+                                    <h6 class="category">
+                                        <i class="fa fa-trophy"></i> Hackathon Project
+                                    </h6>
+                                    <h4 class="card-title">
+                                        <a href="https://github.com/Shehan29/Quizzlet" target="_blank" rel="tooltip" title="Check it out on GitHub">Quizzlet</a>
+                                    </h4>
+                                    <p class="card-description">
+                                        Interactive quizzing application that creates customizable quizzes with multiple choice, true/false and short answer questions.
+                                    </p>
+                                    <div class="card-footer">
+                                        <div class="author">
+                                            <span>Java, MySQL, Swing, AWT Libraries, Access</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--     *********    CONTACT ME     *********      -->
+    <section id="contact"></section>
+    <div class="contactus-2">
+        <div id="contactUsMap" class="map"></div>
+        <div class="col-lg-6 col-md-10">
+            <div class="card card-contact card-raised" style=" max-width: 100%">
+                <form action="mailto:shehan.suresh@uwaterloo.ca?subject=Let's Talk&body=I found your website and wanted to learn a little more about you." role="form" id="contact-form" method="post" enctype="text/plain">
+                    <div class="card-header text-center">
+                        <h4 class="card-title">Get in touch</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="info info-horizontal">
+                                    <div class="icon icon-primary">
+                                        <i class="now-ui-icons tech_mobile"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h5 class="info-title">Give me a call</h5>
+                                        <p> Shehan Suresh
+                                            <br> (416) 471-8024
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info info-horizontal">
+                                    <div class="icon icon-primary">
+                                        <i class="now-ui-icons location_pin"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h5 class="info-title">Find me coding</h5>
+                                        <p> 295B Lester St,
+                                            <br> Waterloo, ON
+                                            <br> N2L 3W6
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="info info-horizontal">
+                                    <div class="icon icon-primary">
+                                        <i class="now-ui-icons ui-1_email-85"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h5 class="info-title">Email me</h5>
+                                        <p> shehan.suresh@uwaterloo.ca </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6" style="display: flex; align-items: center; justify-content: center">
+                                <button type="submit"  class="btn btn-primary btn-round pull-right">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--     *********    END CONTACT US 2      *********      -->
+    <footer class="footer footer-default ">
+        <div class="container" style="font-size: 1rem">
+            <nav>
+                <ul>
+                    <li>
+                        &copy;
+                        <script>
+							document.write(new Date().getFullYear())
+                        </script> Shehan Suresh
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright" style="font-size: 1rem">
+                Made with <i class="fa fa-code" style="color: #e95e38"></i>
+            </div>
+        </div>
+    </footer>
 </div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
-
 </body>
+
+<!--   Core JS Files   -->
+<script src="assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/plugins/moment.min.js"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="assets/js/plugins/bootstrap-switch.js"></script>
+<!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+<script src="assets/js/plugins/bootstrap-tagsinput.js"></script>
+<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+<script src="assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLfGs9QqswvsvuZ3q2a_-rRDzYA6h1MOk"></script>
+<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="assets/js/plugins/jasny-bootstrap.min.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="assets/js/plugins/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+<script src="assets/js/now-ui-kit.js?v=1.2.0" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// the body of this function is in assets/js/now-ui-kit.js
+		nowuiKit.initContactUsMap();
+	});
+</script>
+<script type="text/javascript" src="js/particle.js"></script>
+
 </html>
