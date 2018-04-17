@@ -13,3 +13,7 @@
         font-size: 1em;
     }
 }
+
+.header-links {
+    cursor: pointer;
+}

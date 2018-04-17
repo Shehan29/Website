@@ -24,3 +24,13 @@ function setupHoverAnimation(id, animation) {
 			$(id).removeClass(`animated ${animation} infinite`);
 		});
 }
+
+function scrollHere(id) {
+	(function($) {
+		$(document).ready(function() {
+			$('html, body').animate({
+				'scrollTop': $(`#${id}`).offset().top
+			}, 1500);
+		});
+	})(jQuery);
+}
