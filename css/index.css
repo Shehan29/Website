@@ -1,12 +1,3 @@
-.workImg {
-    margin-top: 20%;
-    height: 70%;
-}
-
-.workExperience {
-    font-size: 1rem;
-}
-
 @media screen and (max-device-width: 480px)
 {
     #email {
@@ -16,4 +7,26 @@
 
 .header-links {
     cursor: pointer;
+}
+
+.workImg {
+    margin-top: 20%;
+    height: 70%;
+}
+
+.workExperience {
+    font-size: 1rem;
+}
+
+
+.workExperience.c1 b em {
+    color: #7b0005;
+}
+
+.workExperience.ni b em {
+    color: #000353;
+}
+
+.workExperience.brainweber b em {
+    color: #007a20;
 }
