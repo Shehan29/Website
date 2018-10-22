@@ -19,6 +19,10 @@
 }
 
 
+.workExperience.ibm b em {
+    color: #466bb0;
+}
+
 .workExperience.c1 b em {
     color: #7b0005;
 }
