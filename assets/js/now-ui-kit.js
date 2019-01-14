@@ -254,12 +254,12 @@ nowuiKit = {
 
     }, 6),
 
-    initContactUsMap: function() {
-        var myLatlng = new google.maps.LatLng(43.476037, -80.536604);
+    initContactUsMap: function(coordinates, centre) {
+        var myLatlng = new google.maps.LatLng(coordinates[0], coordinates[1]);
         var mapOptions = {
             zoom: 15,
-            center: new google.maps.LatLng(43.475378, -80.555895),
-            scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
+            center: new google.maps.LatLng(centre[0], centre[1]),
+            scrollwheel: false,
             styles: []
         };
 
