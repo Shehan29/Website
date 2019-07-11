@@ -78,7 +78,7 @@
         <div class="page-header-image" data-parallax="true" id="particle-canvas"></div>
         <div class="content-center">
             <div class="photo-container">
-                <img src="images/me_square.jpg" alt="">
+                <img id="me_pic" src="images/me_square.jpg" alt="">
             </div>
             <h3 class="title">Shehan Suresh</h3>
             <p class="category" style="padding-top: 5px">One Coder. Infinite Possibilities.</p>
@@ -88,7 +88,7 @@
                     <p>Hackathons</p>
                 </div>
                 <div class="social-description">
-                    <h2 id="yearsOfCoding">6</h2>
+                    <h2 id="yearsOfCoding">7</h2>
                     <p>Years of Coding</p>
                 </div>
                 <div class="social-description">
@@ -131,9 +131,13 @@
                     <div class="nav-align-center">
                         <ul class="nav nav-pills nav-pills-neutral nav-pills-just-icons" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#ibm" role="tablist">
+                                <a class="nav-link active" data-toggle="tab" href="#wish" role="tablist">
+                                    <img id="wishLogo" src="images/wish.png" style="padding: 8px"/>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#ibm" role="tablist">
                                     <img id="ibmLogo" src="images/ibm.png" style="margin-top: 25%; padding: 5px"/>
-
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -156,18 +160,57 @@
                     </div>
                     <!-- Tab panes -->
                     <div class="tab-content gallery">
-                        <div class="tab-pane active" id="ibm" role="tabpanel">
+                        <div class="tab-pane active" id="wish" role="tabpanel">
                             <div class="row">
                                 <div class="col-md-5 ml-auto mr-auto">
-                                    <div class="card card-background card-background-product card-raised" style="background: #466bb0">
+                                    <div class="card card-background card-background-product card-raised" id="wishCard" style="background: #07acd4">
+                                        <div class="card-body">
+                                            <h2 class="card-title">Wish</h2>
+                                            <p class="card-description">
+                                                Took ownership of the product ranking model and pipeline.
+                                            </p>
+                                            <hr style="border-color: white">
+                                            <h4 class="card-title">Languages / Frameworks / Tools</h4>
+                                            <p class="card-description">
+                                                Go, Python, Bash
+                                                <br/>
+                                                Redis, AWS
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="info info-horizontal">
+                                        <div class="icon icon-info">
+                                            <i class="now-ui-icons ui-2_chat-round"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="info-title">Cool Things I Did</h5>
+                                            <p>
+                                            <ul class="workExperience wish">
+                                                <li>Implemented centralized <b><em>Redis feature store</em></b> which <b><em>reduced memory usage</em></b> on <b><em>52</em></b> EC2 instances by <b><em>75%</em></b></li>
+                                                <li><b><em>Reduced</em></b> initial request <b><em>latency</em></b> by <b><em>90%</em></b> by introducing various optimizations such as caching model weights</li>
+                                                <li>Added <b><em>new features</em></b> to the product ranking model to <b><em>increase GMV</em></b> (gross merchandise value) by <b><em>3%</em></b></li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="ibm" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-5 ml-auto mr-auto">
+                                    <div class="card card-background card-background-product card-raised" style="background: #3870ba">
                                         <div class="card-body">
                                             <h2 class="card-title">IBM</h2>
-                                            <p class="description">
+                                            <p class="card-description">
                                                 Spearheaded the development of critical backend APIs for IBM's launch of Watson Studio Desktop
                                             </p>
                                             <hr style="border-color: white">
                                             <h4 class="card-title">Languages / Frameworks / Tools</h4>
-                                            <p class="description">
+                                            <p class="card-description">
                                                 Java, Bash
                                                 <br/>
                                                 Apache Lucene, WebSphere Liberty
@@ -197,19 +240,18 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="tab-pane" id="c1" role="tabpanel">
                             <div class="row">
                                 <div class="col-md-5 ml-auto mr-auto">
-                                    <div class="card card-background card-background-product card-raised" style="background: red">
+                                    <div class="card card-background card-background-product card-raised" style="background: #c13c2e">
                                         <div class="card-body">
                                             <h2 class="card-title">Capital One</h2>
-                                            <p class="description">
+                                            <p class="card-description">
                                                 Spearheaded the development of a variety of applications in order to reduce credit card fraud.
                                             </p>
                                             <hr style="border-color: white">
                                             <h4 class="card-title">Languages / Frameworks / Tools</h4>
-                                            <p class="description">
+                                            <p class="card-description">
                                                 Java, Python, JavaScript
                                                 <br/>
                                                 TensorFlow, Keras
@@ -245,19 +287,18 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="tab-pane" id="ni" role="tabpanel">
                             <div class="row">
                                 <div class="col-md-5 ml-auto mr-auto">
-                                    <div class="card card-background card-background-product card-raised" style="background: darkblue">
+                                    <div class="card card-background card-background-product card-raised" style="background: #295c99">
                                         <div class="card-body">
                                             <h2 class="card-title">National Instruments</h2>
-                                            <p class="description">
+                                            <p class="card-description">
                                                 Worked in an Agile team implementing new features for Multisim Live.
                                             </p>
                                             <hr style="border-color: white">
                                             <h4 class="card-title">Languages / Frameworks / Tools</h4>
-                                            <p class="description">
+                                            <p class="card-description">
                                                 JavaScript, Python, HTML, CSS
                                                 <br/>
                                                 jQuery, Polymer, Node.js, Django, Selenium, Jasmine
@@ -289,7 +330,7 @@
                         <div class="tab-pane" id="bw" role="tabpanel">
                             <div class="row">
                                 <div class="col-md-5 ml-auto mr-auto">
-                                    <div class="card card-background card-background-product card-raised" style="background: lime">
+                                    <div class="card card-background card-background-product card-raised" style="background: #148468">
                                         <div class="card-body">
                                             <h2 class="card-title">Brainweber</h2>
                                             <p class="card-description">
@@ -297,7 +338,7 @@
                                             </p>
                                             <hr style="border-color: white">
                                             <h4 class="card-title">Languages / Frameworks / Tools</h4>
-                                            <p class="description">
+                                            <p class="card-description">
                                                 JavaScript, React, Redux
                                             </p>
                                         </div>
@@ -349,6 +390,9 @@
                                     <p class="card-description">
                                         Mobile application that helps students practice their mental math skills.
                                     </p>
+                                    <p class="card-description">
+                                        Over 500 app units!
+                                    </p>
                                     <div class="card-footer">
                                         <div class="author">
                                             <span>Ionic, Angular, TypeScript</span>
@@ -356,7 +400,7 @@
                                     </div>
                                     <div class="card-footer text-center">
                                         <a href='https://play.google.com/store/apps/details?id=tusgu.ucmas.listening' target="_blank" rel="tooltip" title="Get it on Google Play"
-                                           class="btn btn-round btn-lg btn-icon" style="margin-right: 10px; background: #42ff61"> <!--override the colour-->
+                                           class="btn btn-round btn-lg btn-icon" style="margin-right: 10px; background: #29de85"> <!--override the colour-->
                                             <i style="margin-top: 50%; transform: translate(0%, -50%);" class="fab fa-lg fa-google-play"></i>
                                         </a>
                                         <a href='https://itunes.apple.com/ca/app/tusgu-ucmas-listening/id1462385375' target="_blank" rel="tooltip" title="Get it on the Apple App Store"

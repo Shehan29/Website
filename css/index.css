@@ -1,5 +1,4 @@
-@media screen and (max-device-width: 480px)
-{
+@media screen and (max-device-width: 480px) {
     #email {
         font-size: 1em;
     }
@@ -18,17 +17,33 @@
     font-size: 1rem;
 }
 
+.card-background:after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0.25rem;
+}
+
+.workExperience.wish b em {
+    color: #07acd4;
+}
 
 .workExperience.ibm b em {
-    color: #466bb0;
+    color: #3870ba;
 }
 
 .workExperience.c1 b em {
-    color: #7b0005;
+    color: #c13c2e;
 }
 
 .workExperience.ni b em {
-    color: #000353;
+    color: #295c99;
 }
 
 .workExperience.brainweber b em {
