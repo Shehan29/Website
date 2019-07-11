@@ -4,9 +4,6 @@ $(document).ready(function() {
 	const centre = [43.475378, -80.555895];
 	nowuiKit.initContactUsMap(coordinates, centre);
 	
-	// hover animation for profile pic
-	setupHoverAnimation('#me_pic', 'pulse');
-	
 	// hover animation for interesting facts
 	setupHoverAnimation('#yearsOfCoding', 'tada');
 	setupHoverAnimation('#possibilities', 'rubberBand');
