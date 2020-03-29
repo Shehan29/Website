@@ -42,30 +42,24 @@
                 <span class="navbar-toggler-bar bar3"></span>
             </button>
         </div>
-        <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
+        <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="blue">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link header-links" onclick="scrollHere('aboutMe')">
+                    <a class="nav-link header-links" onclick="scrollHere('aboutMe'); doClick('bodyClick');">
                         <i class="fa fa-user"></i>
                         <p>About Me</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link header-links" onclick="scrollHere('work')">
+                    <a class="nav-link header-links" onclick="scrollHere('work'); doClick('bodyClick');">
                         <i class="fa fa-briefcase"></i>
                         <p class="hidden-lg-up">Work</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link header-links" onclick="scrollHere('projects')" >
+                    <a class="nav-link header-links" onclick="scrollHere('projects'); doClick('bodyClick');" >
                         <i class="fa fa-code"></i>
                         <p class="hidden-lg-up">Projects</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link header-links" onclick="scrollHere('contact')">
-                        <i class="fa fa-address-card"></i>
-                        <p class="hidden-lg-up">Contact</p>
                     </a>
                 </li>
             </ul>
@@ -88,7 +82,7 @@
                     <p>Hackathons</p>
                 </div>
                 <div class="social-description">
-                    <h2 id="yearsOfCoding">7</h2>
+                    <h2 id="yearsOfCoding">8</h2>
                     <p>Years of Coding</p>
                 </div>
                 <div class="social-description">
@@ -109,17 +103,20 @@
                 <a href="https://www.linkedin.com/in/shehansuresh/" target="_blank" class="btn btn-linkedin btn-round btn-lg btn-icon" rel="tooltip" title="Network with me on LinkedIn">
                     <i class="fa fa-linkedin"></i>
                 </a>
+                <a href="mailto:shehan.suresh@uwaterloo.ca" target="_blank" class="btn btn-round btn-lg btn-icon" rel="tooltip" title="Send me an Email">
+                    <i class="fa fa-envelope"></i>
+                </a>
             </div>
             <h3 class="title">About me</h3>
-            <h5 class="description text-center">I am a 3B Software Engineering Student at the University of Waterloo. <br>
+            <h5 class="description text-center">I am a 4A Software Engineering Student at the University of Waterloo. <br>
                 I am an avid programmer who enjoys coding and solving problems. <br>
                 Outside of developing software, I love to make 🤖, solve <img src="http://www.free-emoticons.com/files/music-emoticons/10784.png" style="border:0px;vertical-align:middle;height:1em">  and play ⚽.</h5>
 
             <div style="text-align: center">
                 <h4>Status:
-                    <div style="display: inline-block; color: #08b5e1">Data & Relevancy Engineer @ Wish</div>
+                    <div style="display: inline-block; color: #08b5e1">Software Engineer @ Citadel Securities</div>
                 </h4>
-                <p class="description" style="margin-top: 0; margin-bottom: 0">May - August 2019</p>
+                <p class="description" style="margin-top: 0; margin-bottom: 0">January - April 2020</p>
             </div>
 
 
@@ -129,9 +126,14 @@
                 <div class="col-md-12">
                     <h4 class="title text-center">Work Experience</h4>
                     <div class="nav-align-center">
-                        <ul class="nav nav-pills nav-pills-neutral nav-pills-just-icons" role="tablist">
+                        <ul class="nav nav-pills nav-pills-neutral nav-pills-just-icons" role="tablist" style="justify-content: center">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#wish" role="tablist">
+                                <a class="nav-link active" data-toggle="tab" href="#citsec" role="tablist">
+                                    <img id="citsecLogo" src="images/cit_sec.png" style="padding-top: 12px"/>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#wish" role="tablist">
                                     <img id="wishLogo" src="images/wish.png" style="padding: 8px"/>
                                 </a>
                             </li>
@@ -160,7 +162,44 @@
                     </div>
                     <!-- Tab panes -->
                     <div class="tab-content gallery">
-                        <div class="tab-pane active" id="wish" role="tabpanel">
+                        <div class="tab-pane active" id="citsec" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-5 ml-auto mr-auto">
+                                    <div class="card card-background card-background-product card-raised" id="citsecCard" style="background: #002f6b">
+                                        <div class="card-body">
+                                            <h2 class="card-title">Citadel Securities</h2>
+                                            <p class="card-description">
+                                                Built critical services for the Options Market Making team.
+                                            </p>
+                                            <hr style="border-color: white">
+                                            <h4 class="card-title">Languages / Frameworks / Tools</h4>
+                                            <p class="card-description">
+                                                Python, C++
+                                                <br/>
+                                                WebSocket, SFTP
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="info info-horizontal">
+                                        <div class="icon icon-info">
+                                            <i class="now-ui-icons ui-2_chat-round"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="info-title">Cool Things I Did</h5>
+                                            <p>
+                                            <ul class="workExperience citadel_securities">
+                                                <li>Added performance metrics monitoring for a <b><em>distributed streaming platform</em></b> enabling the reduction of latency by <b><em>25%</em></b> and memory by <b><em>10%</em></b></li>
+                                                <li>Designed and built <b><em>real-time backend applications</em></b> to support a new trading desk that is approximated to bring in <b><em>profits over $2.6 million</em></b> annually</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="wish" role="tabpanel">
                             <div class="row">
                                 <div class="col-md-5 ml-auto mr-auto">
                                     <div class="card card-background card-background-product card-raised" id="wishCard" style="background: #07acd4">
@@ -198,7 +237,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="tab-pane" id="ibm" role="tabpanel">
                             <div class="row">
                                 <div class="col-md-5 ml-auto mr-auto">
@@ -391,7 +429,7 @@
                                         Mobile application that helps students practice their mental math skills.
                                     </p>
                                     <p class="card-description">
-                                        Over 500 app units!
+                                        Over 4000 app units!
                                     </p>
                                     <div class="card-footer">
                                         <div class="author">
@@ -621,70 +659,6 @@
             </div>
         </div>
     </div>
-    <!--     *********    CONTACT ME     *********      -->
-    <section id="contact"></section>
-    <div class="contactus-2">
-        <div id="contactUsMap" class="map"></div>
-        <div class="col-lg-6 col-md-10">
-            <div class="card card-contact card-raised" style=" max-width: 100%">
-                <form action="mailto:shehan.suresh@uwaterloo.ca?subject=Let's Talk&body=I found your website and wanted to learn a little more about you." role="form" id="contact-form" method="post" enctype="text/plain">
-                    <div class="card-header text-center">
-                        <h4 class="card-title">Get in touch</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="info info-horizontal">
-                                    <div class="icon icon-primary">
-                                        <i class="now-ui-icons tech_mobile"></i>
-                                    </div>
-                                    <div class="description">
-                                        <h5 class="info-title">Give me a call</h5>
-                                        <a href="tel:416-471-8024">
-                                        <p style="font-weight: 500"> Shehan Suresh
-                                            <br> (416) 471-8024
-                                        </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="info info-horizontal">
-                                    <div class="icon icon-primary">
-                                        <i class="now-ui-icons location_pin"></i>
-                                    </div>
-                                    <div class="description">
-                                        <h5 class="info-title">Find me coding</h5>
-                                        <p style="font-weight: 500"> 130 Colombia Street West,
-                                            <br> Waterloo, ON
-                                            <br> N2L 0G6
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="info info-horizontal">
-                                    <div class="icon icon-primary">
-                                        <i class="now-ui-icons ui-1_email-85"></i>
-                                    </div>
-                                    <div class="description">
-                                        <h5 class="info-title">Email me</h5>
-                                        <a href="mailto:shehan.suresh@uwaterloo.ca" target="_top"><p style="font-weight: 500" id="email">shehan.suresh@uwaterloo.ca</p></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6" style="display: flex; align-items: center; justify-content: center">
-                                <button type="submit"  class="btn btn-primary btn-round pull-right">Send Message</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!--     *********    END CONTACT US 2      *********      -->
     <footer class="footer footer-default ">
         <div class="container" style="font-size: 1rem">
             <nav>

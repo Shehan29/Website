@@ -38,3 +38,17 @@ function scrollHere(id) {
 		});
 	})(jQuery);
 }
+
+function eventFire(el, etype) {
+	if (el.fireEvent) {
+		el.fireEvent('on' + etype);
+	} else {
+		var evObj = document.createEvent('Events');
+		evObj.initEvent(etype, true, false);
+		el.dispatchEvent(evObj);
+	}
+}
+
+function doClick(id) {
+	eventFire(document.getElementById(id), 'click');
+}

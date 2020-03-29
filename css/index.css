@@ -30,6 +30,10 @@
     border-radius: 0.25rem;
 }
 
+.workExperience.citadel_securities b em {
+    color: #002f6b;
+}
+
 .workExperience.wish b em {
     color: #07acd4;
 }
